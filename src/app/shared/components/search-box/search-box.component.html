@@ -1,8 +1,8 @@
 <!-- Search box -->
 <input
   type="text"
-  [placeholder]="onValue"
+  [placeholder]="placeholder"
   class="form-control"
-  (keyup.enter)="sendElement()"
+  (keyup.enter)="sendElement( txtInput.value )"
   #txtInput
 >
