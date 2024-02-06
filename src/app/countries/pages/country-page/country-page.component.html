@@ -8,7 +8,7 @@
   <div>
     <div class="row">
       <div class="col-12">
-        <h2>Pais: <strong> {{ country.name.common }} </strong></h2>
+        <h2>País: <strong> {{ country.name.common }} </strong></h2>
       </div>
     </div>
   </div>
@@ -24,12 +24,25 @@
 
       <ul class="list-group">
         <li class="list-group-item">
-          <strong> Poblacion: </strong> {{country.population | number}}
+          <strong> Nombre oficial: </strong> {{ country.name.official }}
         </li>
 
         <li class="list-group-item">
-          <strong> Codigo: </strong> {{ country.cca3}}
+          <strong> Capital: </strong> {{ country.capital }}
         </li>
+
+        <li class="list-group-item">
+          <strong> Población: </strong> {{country.population | number}}
+        </li>
+
+        <li class="list-group-item">
+          <strong> Código: </strong> {{ country.cca3}}
+        </li>
+
+        <li class="list-group-item">
+          <strong> Continente: </strong> {{ country.continents }}
+        </li>
+
       </ul>
     </div>
   </div>
